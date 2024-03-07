@@ -40,7 +40,7 @@
     position: absolute;
     right: 80px;
     z-index: 100;
-    white-space: normal;
+    white-space: pre-wrap; /* Modified to preserve whitespace and new lines */
     display: inline-block;
     font: inherit !important;
     font-family: inherit !important;
@@ -48,7 +48,7 @@
     box-sizing: border-box;
     min-width: 300px; /* Minimum width */
     max-width: 500px; /* Maximum width */
-    max-height: 100px; /* Maximum height */
+    max-height: 300px; /* Adjusted maximum height for better content management */
     overflow-y: auto; /* Scrollbar for overflow content */
 }
 
@@ -221,6 +221,7 @@
     padding: 5px;
     max-width: 95%;
     word-wrap: break-word;
+	white-space: pre-wrap;
 }
 
 .user-message {
